@@ -4,5 +4,6 @@ Numpy
 Seaborn
 Scikit-learn
 Joblib
+Streamlit
 
 
