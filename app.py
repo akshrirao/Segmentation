@@ -9,8 +9,8 @@ import streamlit as st
 st.set_page_config(page_title="Customer Segmentation", page_icon=":bar_chart:", layout="wide")
 
 #load the model
-kmeans=joblib.load('model/kmeans_model.pkl')
-scaler=joblib.load('model/scaler.pkl')
+kmeans=joblib.load('kmeans_model.pkl')
+scaler=joblib.load('scaler.pkl')
 
 #title and description
 st.title("Customer Segmentation Dashboard")
@@ -29,7 +29,7 @@ uploaded_file = st.sidebar.file_uploader("Upload A CSV file", type="csv")
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else:
-    df=pd.read_csv(r"C:\Users\PRIYANKA SHRIRAO\OneDrive\Desktop\DATA SCIENCE_AK\VS CODE\ML Pro-2 Unsupervised learn\Mall_Customers.csv")    
+    df=pd.read_csv(r"Mall_Customers.csv")    
 
     st.write("Data Preview:")
     st.dataframe(df.head())
