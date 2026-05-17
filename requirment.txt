@@ -1,0 +1,8 @@
+Pnadas
+Matpotlib
+Numpy
+Seaborn
+Scikit-learn
+Joblib
+
+
